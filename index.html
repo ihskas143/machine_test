@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner with Carousel & Video Background</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+</head>
+
+<body>
+
+    <!-- Video background -->
+    <!-- <video class="video-background" autoplay muted loop>
+  <source src="video.mp4" type="video/mp4">
+  
+</video> -->
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <!-- Top Bar -->
+        <div class="top-bar">
+
+            <div class="email">
+                <img src="images/hamburger.png" name="menu" id="menu" style="max-width: 40px" alt="">
+                <a href="mailto:info@example.com" class="text-white"><img src="images/mail.png"
+                        style="max-width: 40px; margin-left: 20px;" alt=""></a>
+            </div>
+            <div>
+                <img src="images/logo.png" style="max-width: 200px" alt="">
+            </div>
+            <div class="search-share">
+                <img src="images/loupe.png" style="max-width: 40px" alt="">
+                <img src="images/share.png" style="max-width: 40px" alt="">
+            </div>
+        </div>
+
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="d-block w-100" controls autoplay loop muted>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" controls autoplay loop muted>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" controls autoplay loop muted>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <section class="insights-section">
+        <div>
+            <p class="insights-text">INSIGHTS</p>
+        </div>
+        <div>
+            <p class="insights-heading">SHM Store <b> Marketplace Insights</b></p>
+        </div>
+        <div>
+            <p class="insights-description">ksjffg fkjdfg gjkgng fgmnf,g gnfgkjf kjfgnfg gjkfgn jkfk kfjsgnf ggnf gn
+                fgfgnfg fgnfg jsn,ms gsgj sgsfg fgfggff gf g fggf gf gf fg fgfgfgf fg fg g</p>
+        </div>
+    </section>
+    <section>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="max-height: 80vh;">
+                <div class="carousel-item active" style="">
+                    <img src="images/banner-img (1).jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First Slide</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner-img (1).jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second Slide</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner-img (1).jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third Slide</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="insights-section">
+        <div>
+            <p class="insights-text">NETWORKS</p>
+        </div>
+        <div>
+            <p class="insights-heading">SHM Network <b> Compability</b></p>
+        </div>
+        <div>
+            <p class="insights-description">Our extensive network of delivery center across multiple locations, ensure
+                fast and effective service</p>
+        </div>
+    </section>
+
+
+    <!-- India Map Image -->
+    <div class="map-container" style="position:relative;">
+        <img src="images/458508.jpg" alt="Background Image" class="background-image">
+        <img src="images/F97E3234.png" alt="India Map" id="indiaMap" class="indiaMap"
+            style="width: 51%;height:auto;padding-left: 134px;margin-left: 324px;">
+
+        <!-- Location pointers on the map -->
+        <div class="location-pointer" data-location="Maharashtra - Nashik & Nagpur" style="top:50%; left:40%;"></div>
+        <div class="location-pointer" data-location="Gujarat" style="top:50%; left:33%;"></div>
+        <div class="location-pointer" data-location="Rajasthan" style="top:43%; left:34%;"></div>
+        <div class="location-pointer" data-location="Delhi" style="top:34%; left:36%;"></div>
+        <div class="location-pointer" data-location="Karnataka" style="top:73%; left:39%;"></div>
+        <div class="location-pointer" data-location="Hyderabad" style="top:66%; left:44%;"></div>
+        <div class="location-pointer" data-location="Chhattisgarh" style="top:53%; left:43%;"></div>
+    </div>
+
+    <!-- Tooltip card (Initially hidden) -->
+    <div id="tooltipCard" class="tooltip-card">
+        <div id="tooltipContent"></div>
+    </div>
+
+
+    <!-- <div align="center">
+        <div id="visualizations"> </div>
+    </div> -->
+
+    <!-- Fullscreen Menu Overlay -->
+    <div id="menuOverlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeBtn" class="close-btn">&times;</span>
+            <ul>
+                <li>+ Wedding</li>
+                <li>+ Corporate</li>
+                <li>+ Activities</li>
+                <li>+ Accommodation</li>
+                <li>+ Occasion</li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+
+    </section>
+
+
+    <div class="footer-upper">
+        <h2>
+            Get Your Products Delivered In <br />
+            <b>Your Preferred City Or The Next Port Of Call.</b>
+        </h2>
+        <a href="#" class="contact-btn">
+            Contact Us
+            <img src="images/whatsapp.png" alt="WhatsApp" />
+        </a>
+    </div>
+
+    <div class="footer-middle">
+        <div class="footer-card">
+            <img src="images/logo.svg" alt="SHM Store Logo" class="footer-logo" />
+            <p>
+                We give you complete control of your shipments. Delivered on time with
+                no hassle.
+            </p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">SHM Store</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="company-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">SHM Group</a></li>
+                    <li><a href="#">SHM Fire Safety</a></li>
+                    <li><a href="#">SHM Shipcare</a></li>
+                    <li><a href="#">SHM Products</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><img src="images/telephone.png" class="text-white" style="max-width: 30px" alt="Phone" />
+                        +91-222-378-6400</li>
+                    <li>
+                        <img src="images/mail.png" class="text-white" style="max-width: 30px" alt="Email" />
+                        info@theshmstore.com
+                    </li>
+                    <li>
+                        <img src="images/location-pin.png" class="text-white" style="max-width: 30px" alt="Location" />
+                        Head office BPT,
+                        Plot no. 51B, magazine street, darukhana, Mazagaon, Mumbai, 400010
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <h3>Have Questions?</h3>
+            <p>Ask Our 24/7 Customer Support Executive</p>
+            <p class="call-us">Call Us : +91 1800-3002-7286</p>
+        </div>
+        <div class="footer-bottom-right">
+            <h3>Subscribe to our newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Enter Email" />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom-links">
+        <p>
+            &copy; 2022 SHM Shipcare. All Rights Reserved. ISO 9001:2008 Certified.
+            Designed by ideamagix
+        </p>
+        <div class="footer-privacy">
+            <a href="#">Privacy</a> | <a href="#">Terms & Conditions</a> |
+            <a href="#">Site Map</a>
+        </div>
+    </div>
+
+
+
+    <!-- ****************************************************************************************************************************************************** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- <script type="text/javascript">
+        google.load('visualizations', '1', {
+            'packages': ['geochart']
+        });
+        google.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var data = google.visualization.arrayToDataTable([
+                ['Region Code', 'Location', {
+                    role: 'tooltip',
+                    'p': {
+                        'html': true
+                    }
+                }],
+                ['IN-MH', 'Maharashtra - Nashik & Nagpur', createCustomTooltip('Maharashtra')],
+                ['IN-GJ', 'Gujarat', createCustomTooltip('Gujarat')],
+                ['IN-RJ', 'Rajasthan', createCustomTooltip('Rajasthan')],
+                ['IN-DL', 'Delhi', createCustomTooltip('Delhi')],
+                ['IN-KA', 'Karnataka', createCustomTooltip('Karnataka')],
+                ['IN-TG', 'Hyderabad (Telangana)', createCustomTooltip('Hyderabad (Telangana)')],
+                ['IN-CT', 'Chhattisgarh', createCustomTooltip('Chhattisgarh')]
+            ]);
+
+            var options = {
+                region: 'IN',
+                domain: 'IN',
+                displayMode: 'regions',
+                resolution: 'provinces',
+                colorAxis: {
+                    colors: ['#e5ef88', '#d4b114', '#e85a03']
+                },
+                backgroundColor: '#81d4fa',
+                datalessRegionColor: '#f5f5f5',
+                tooltip: {
+                    isHtml: true
+                },
+                width: 900,
+                height: 380
+            };
+
+            var geochart = new google.visualization.GeoChart(document.getElementById('visualizations'));
+            geochart.draw(data, options);
+        }
+
+        function createCustomTooltip(location) {
+            return '<div style="padding:10px; border-radius:5px; height:auto; background-color:#fff; border: 1px solid #ccc;">' +
+                '<h4 style="margin: 0; font-size: 14px;">SHM Shipcare</h4>' +
+                '<p style="margin: 5px 0 0 0; font-size: 12px;">Location: ' + location + '</p>' +
+                '<p style="color: red;"> View Map</p>' +
+                '</div>';
+        }
+    </script> -->
+
+
+
+</body>
+
+</html>
