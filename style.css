@@ -116,7 +116,7 @@
 
 /* Menu content */
 .overlay-content {
-    padding-left: 130px;
+    padding-left: 50px;
     position: relative;
     top: 20%;
     /* text-align: center; */
@@ -434,14 +434,12 @@ body {
     overflow: hidden;
 }
 
-.india-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 2; /* India map overlaps the background */
-}
+.indiaMap {
+    width: 78%;
+    height:auto;
+    padding-left: 14px;
+    margin-left: 92px;
+    }
 
 /* Location pointer styles */
 .location-pointer {
@@ -556,62 +554,73 @@ body {
 
 /* Mobile Responsive Media Query */
 @media screen and (max-width: 576px) {
-    /* Center the map */
+    /* Center the map container */
     .map-container {
         justify-content: center;
         padding: 10px;
+        overflow: hidden; /* Hide any overflow for mobile */
     }
 
-    /* Adjust the size and position of the India map */
+    /* Adjust the size and center the India map */
     #indiaMap {
-        width: 130%; /* Make the map fill the container width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Fit the map to the container width */
+        height: auto;
         margin: 0 auto;
         padding-left: 0;
+        margin-top: 133px;
     }
 
-    /* Adjust the size of the pointers */
+    /* Adjust the size of the location pointers */
     .location-pointer {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
+        background-color: red; /* Just for visibility; you can style as needed */
     }
 
     /* Reposition location pointers based on the centered map */
     .location-pointer[data-location="Maharashtra - Nashik & Nagpur"] {
-        top: 55%; 
-        left: 52%;
+        top: 53%; /* Adjusted position */
+        left: 25%; /* Adjusted position */
     }
 
     .location-pointer[data-location="Gujarat"] {
-        top: 55%;
-        left: 44%;
+        top: 49%;
+        left: 13%;
     }
 
     .location-pointer[data-location="Rajasthan"] {
-        top: 48%;
-        left: 46%;
+        top: 46%;
+        left: 17%;
     }
 
     .location-pointer[data-location="Delhi"] {
-        top: 39%;
-        left: 48%;
+        top: 42%;
+        left: 20%;
     }
 
     .location-pointer[data-location="Karnataka"] {
-        top: 78%;
-        left: 51%;
+        top: 67%;
+        left: 25%;
     }
 
     .location-pointer[data-location="Hyderabad"] {
-        top: 72%;
-        left: 54%;
+        top: 60%;
+        left: 37%;
     }
 
     .location-pointer[data-location="Chhattisgarh"] {
-        top: 60%;
-        left: 53%;
+        top: 57%;
+        left: 48%;
+    }
+
+    /* Tooltip card responsive adjustments */
+    .tooltip-card {
+        width: 160px; /* Adjust card width */
+        font-size: 12px; /* Adjust font size */
     }
 }
+
+
 
 /* ********************************************************************************************../. */
 /* ********************************************************************************************../. */
@@ -622,13 +631,6 @@ body {
     .top-bar .email img:not(#menu), 
     .top-bar .search-share img {
         display: none;
-    }
-
-    .indiaMap{
-        width: 150%;
-        height: auto;
-        padding-left: 0px;
-        margin-left: -19px;
     }
 
     /* Center the logo and adjust its size if needed */
@@ -664,7 +666,7 @@ body {
     /* Adjust close button position for mobile */
     .close-btn {
         top: -40px;
-        right: 140px; /* Move close button to top-right corner */
+        right: 123px; /* Move close button to top-right corner */
         font-size: 35px; /* Slightly smaller close button */
     }
 }
