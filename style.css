@@ -435,10 +435,10 @@ body {
 }
 
 .indiaMap {
-    width: 78%;
+    width: 48%;
     height:auto;
-    padding-left: 14px;
-    margin-left: 92px;
+    padding-left: 60px;
+    margin-left: 378px;
     }
 
 /* Location pointer styles */
@@ -550,6 +550,16 @@ body {
     object-fit: cover;
     opacity: 0.3; /* Adjust opacity for fainted effect */
     z-index: 1; /* Background image should be underneath */
+}
+
+@media screen and (max-width: 1000px) {
+    /* Center the map container */
+    .indiaMap {
+        width: 69%;
+        height: auto;
+        padding-left: 0px;
+        margin-left: 160px;
+    }
 }
 
 /* Mobile Responsive Media Query */
