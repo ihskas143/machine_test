@@ -552,13 +552,13 @@ body {
     z-index: 1; /* Background image should be underneath */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     /* Center the map container */
     .indiaMap {
-        width: 69%;
+        width: 49%;
         height: auto;
         padding-left: 0px;
-        margin-left: 160px;
+        margin-left: 250px;
     }
 }
 
