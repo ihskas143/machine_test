@@ -4,7 +4,7 @@ const menu = document.getElementById('menu');
 const menuOverlay = document.getElementById('menuOverlay');
 const closeBtn = document.getElementById('closeBtn');
 
-// Show the overlay when menu is clicked
+// Show the overlay when menu is clicked...
 menu.onclick = function () {
     menuOverlay.style.width = '40%'; // Fullscreen overlay
 };
